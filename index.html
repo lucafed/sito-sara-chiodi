@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr.ssa Sara Chiodi – Psicoterapeuta a Bussolengo</title>
+  <meta name="description" content="Psicoterapia individuale, di coppia e per adolescenti. Sedute in presenza a Bussolengo e online. Prima consulenza conoscitiva. Prenota via email o WhatsApp." />
+  <meta name="theme-color" content="#e6f3f1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f7fbfb;
+      --paper:#ffffff;
+      --ink:#0f1c1b;
+      --muted:#5e6e6c;
+      --brand:#3aa39b;
+      --brand2:#74c2bb;
+      --accent:#ffe8b3;
+      --ring: 0 0 0 4px rgba(58,163,155,.18);
+      --radius: 16px;
+      --shadow: 0 14px 30px rgba(15,28,27,.08);
+      --maxw:1140px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Roboto,sans-serif;color:var(--ink);background:linear-gradient(180deg,#f7fbfb 0%, #eef7f6 100%)}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(10px);background:rgba(255,255,255,.7);border-bottom:1px solid rgba(0,0,0,.06);z-index:50}
+    .nav{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+    .logo{display:flex;gap:12px;align-items:center;font-weight:800}
+    .logo-badge{width:36px;height:36px;border-radius:12px;background:conic-gradient(from 180deg,var(--brand),var(--brand2));box-shadow:var(--shadow)}
+    .menu{display:flex;gap:18px;align-items:center}
+    .menu a{font-weight:600;color:#183533}
+    .btn{display:inline-block;padding:12px 16px;border-radius:999px;background:var(--brand);color:white;font-weight:700;border:1px solid rgba(0,0,0,.04);box-shadow:0 8px 20px rgba(58,163,155,.25);transition:.2s}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 12px 26px rgba(58,163,155,.3)}
+    .btn-outline{background:white;color:#183533;border:1px solid rgba(0,0,0,.08)}
+    .container{max-width:var(--maxw);margin:0 auto;padding:56px 20px}
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:36px 0}
+    .hero h1{font-size:clamp(30px,3vw,44px);line-height:1.1;margin:.2em 0}
+    .hero p{font-size:clamp(16px,1.3vw,18px);color:var(--muted)}
+    .card{background:var(--paper);border:1px solid rgba(0,0,0,.06);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+    .pill{display:inline-flex;gap:8px;align-items:center;background:var(--accent);color:#6b4e0d;border-radius:999px;padding:8px 12px;font-weight:700}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    section h2{font-size:clamp(24px,2.2vw,32px);margin:0 0 14px}
+    ul.clean{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+    .badge{display:inline-flex;padding:8px 12px;border-radius:999px;background:#eef7f6;font-weight:700}
+    .kpis{display:flex;gap:18px;flex-wrap:wrap}
+    .kpi{flex:1;min-width:180px;background:var(--paper);border:1px solid rgba(0,0,0,.06);border-radius:var(--radius);padding:18px;text-align:center}
+    .kpi b{font-size:22px}
+    .footer{background:#0d1615;color:#d9e7e5;margin-top:40px}
+    .footer a{color:#c9eeea}
+    .footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px}
+    .tagline{font-size:14px;color:var(--muted)}
+    .sep{height:1px;background:linear-gradient(90deg,transparent,rgba(0,0,0,.1),transparent);margin:20px 0}
+    .hero-img{position:relative;overflow:hidden;border-radius:14px}
+    .hero-img img{width:100%;height:100%;object-fit:cover;display:block}
+    .overlay{position:absolute;inset:auto 14px 14px 14px;background:rgba(255,255,255,.9);padding:12px;border-radius:12px;display:flex;gap:8px;flex-wrap:wrap}
+    .policy{max-width:900px;margin:0 auto}
+    #cookie-banner {position:fixed;bottom:0;left:0;right:0;background:#141C22;color:#fff;padding:16px;z-index:100;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;font-size:14px}
+    #cookie-banner button {background:#00B5CC;color:#fff;border:none;padding:8px 16px;border-radius:6px;cursor:pointer;margin-top:8px}
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+      header .menu{display:none}
+    }
+    :focus-visible{outline:none;box-shadow:var(--ring)}
+  </style>
+  <!-- SEO Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Psychologist",
+    "name": "Dr.ssa Sara Chiodi",
+    "description": "Psicoterapeuta a Bussolengo. Psicoterapia individuale, di coppia, adolescenti. Sedute in studio e online.",
+    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
+    "url": "https://lucafed.github.io/sito-sara-chiodi/",
+    "telephone": "+39 320 877 5159",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Largo Salvo d'Acquisto 24",
+      "addressLocality": "Bussolengo",
+      "postalCode": "37012",
+      "addressCountry": "IT"
+    },
+    "openingHours": "Mo-Fr 09:00-19:00"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <nav class="nav" aria-label="Principale">
+      <div class="logo">
+        <div class="logo-badge" aria-hidden="true"></div>
+        <div>
+          Dr.ssa Sara Chiodi
+          <div class="tagline">Psicologa Psicoterapeuta</div>
+        </div>
+      </div>
+      <div class="menu">
+        <a href="#servizi">Servizi</a>
+        <a href="#approccio">Approccio</a>
+        <a href="#chi-sono">Chi sono</a>
+        <a href="#tariffe">Tariffe</a>
+        <a href="#contatti">Contatti</a>
+        <a class="btn" href="tel:+393208775159">Chiama</a>
+        <a class="btn" href="mailto:sarachiodi.psy@gmail.com">Prenota ora</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="container hero">
+      <div>
+        <span class="pill">• In studio & online</span>
+        <h1>Psicoterapia a <span style="background:linear-gradient(90deg,var(--accent),transparent);padding:0 .2em">Bussolengo</span></h1>
+        <p>Accolgo adulti, adolescenti e coppie. Lavoriamo insieme su ansia, stress, relazioni, autostima e momenti di cambiamento. Prima consulenza conoscitiva per capire i tuoi bisogni.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
+          <a class="btn" href="https://wa.me/393208775159?text=Buongiorno%2C+vorrei+informazioni+sulle+sedute">Scrivi su WhatsApp</a>
+          <a class="btn btn-outline" href="mailto:sarachiodi.psy@gmail.com">Prenota via email</a>
+        </div>
+        <div class="kpis" style="margin-top:16px">
+          <div class="kpi"><b>10+ anni</b><div>di esperienza</div></div>
+          <div class="kpi"><b>Sedute online</b><div>via video sicura</div></div>
+          <div class="kpi"><b>Flessibilità</b><div>orari serali</div></div>
+        </div>
+      </div>
+      <div class="hero-img" role="img" aria-label="Studio accogliente e ambiente rilassante">
+        <img src="https://images.unsplash.com/photo-1549187774-b4e9b0445b41?q=80&w=1400&auto=format&fit=crop" alt="Studio di psicoterapia con luce naturale" />
+        <div class="overlay">
+          <span class="badge">Ansia & stress</span>
+          <span class="badge">Relazioni</span>
+          <span class="badge">Autostima</span>
+          <span class="badge">Adolescenza</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIZI -->
+    <section id="servizi" class="container">
+      <h2>Servizi</h2>
+      <div class="grid-3">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop" alt="Colloquio individuale" style="width:100%;height:160px;object-fit:cover;border-radius:12px;margin-bottom:10px">
+          <h3>Psicoterapia individuale</h3>
+          <p>Percorsi personalizzati per comprendere emozioni, schemi e bisogni. Obiettivi chiari e monitoraggio dei progressi.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1200&auto=format&fit=crop" alt="Coppia in consulenza" style="width:100%;height:160px;object-fit:cover;border-radius:12px;margin-bottom:10px">
+          <h3>Psicoterapia di coppia</h3>
+          <p>Comunicazione, gestione dei conflitti, riavvicinamento emotivo e progettualità condivisa.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1517245386807-9b4d0d3d6f8d?q=80&w=1200&auto=format&fit=crop" alt="Adolescente a colloquio" style="width:100%;height:160px;object-fit:cover;border-radius:12px;margin-bottom:10px">
+          <h3>Adolescenti & giovani adulti</h3>
+          <p>Sostegno su identità, relazioni, ansia scolastica/universitaria e uso consapevole dei social.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROCCIO -->
+    <section id="approccio" class="container">
+      <h2>Approccio</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Metodo integrato</h3>
+          <p>Integro prospettive <b>cognitivo-comportamentali</b> e <b>psicodinamiche</b>, con attenzione a corpo, emozioni e contesto. Lavoro evidence-based e centrato sulla persona.</p>
+          <ul class="clean" aria-label="Esempi di tecniche">
+            <li>📌 Ristrutturazione cognitiva</li>
+            <li>🧠 Mindfulness e regolazione emotiva</li>
+            <li>🧩 Lavoro su schemi e narrazioni personali</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Come funziona</h3>
+          <ol>
+            <li><b>Primo contatto</b> (telefono/WhatsApp/email)</li>
+            <li><b>Colloqui di valutazione</b> e definizione degli obiettivi</li>
+            <li><b>Percorso</b> con cadenza concordata (in studio o online)</li>
+          </ol>
+          <p class="tagline">Trasparenza, riservatezza e ritmo sostenibile.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHI SONO -->
+    <section id="chi-sono" class="container">
+      <h2>Chi sono</h2>
+      <div class="grid-2">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=900&auto=format&fit=crop" alt="Ritratto professionale" style="width:100%;border-radius:12px" />
+        </div>
+        <div class="card">
+          <h3>Dr.ssa Sara Chiodi</h3>
+          <p>Psicologa Psicoterapeuta. Mi occupo di benessere psicologico in studio privato a Bussolengo e online, collaborando con scuole e associazioni del territorio.</p>
+          <ul class="clean">
+            <li>🎓 Laurea in Psicologia, Specializzazione in Psicoterapia</li>
+            <li>📚 Formazioni su trauma, ansia e relazioni</li>
+            <li>🤝 Approccio empatico e centrato sulla persona</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- AREE -->
+    <section id="aree" class="container">
+      <h2>Aree di intervento</h2>
+      <div class="grid-3">
+        <div class="card">Ansia, attacchi di panico</div>
+        <div class="card">Umore, stress, burnout</div>
+        <div class="card">Relazioni, coppia, separazioni</div>
+        <div class="card">Autostima, perfezionismo</div>
+        <div class="card">Traumi, lutti, cambiamenti</div>
+        <div class="card">Adolescenza, scuola, università</div>
+      </div>
+    </section>
+
+    <!-- TARIFFE -->
+    <section id="tariffe" class="container">
+      <h2>Tariffe & rimborsi</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>In studio</h3>
+          <p>Seduta di 50 minuti. Fattura elettronica (esente IVA art. 10). Possibile detrazione fiscale come spesa sanitaria.</p>
+          <p><b>€70–€90</b> a seduta</p>
+        </div>
+        <div class="card">
+          <h3>Online</h3>
+          <p>Videochiamata sicura e conforme GDPR. Stesse condizioni delle sedute in studio.</p>
+          <p><b>€70–€90</b> a seduta</p>
+        </div>
+      </div>
+      <p class="tagline">Per convenzioni o pacchetti, contattami.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="container">
+      <h2>Domande frequenti</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Quante sedute servono?</h3>
+          <p>Dipende dagli obiettivi: definiamo insieme un percorso sostenibile e rivalutiamo periodicamente i progressi.</p>
+        </div>
+        <div class="card">
+          <h3>È possibile la prima consulenza?</h3>
+          <p>Sì: un incontro conoscitivo per capire i bisogni, valutare l’incastro reciproco e ipotizzare i primi passi.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section id="contatti" class="container">
+      <h2>Contatti</h2>
+      <div class="grid-2">
+        <div class="card">
+          <form id="contactForm" onsubmit="return handleSubmit(event)" aria-label="Modulo di contatto (demo)">
+            <label>Nome<br><input name="name" required placeholder="Il tuo nome" style="width:100%;padding:12px;border-radius:10px;border:1px solid #dfe7e6"></label><br><br>
+            <label>Email<br><input type="email" name="email" required placeholder="nome@email.it" style="width:100%;padding:12px;border-radius:10px;border:1px solid #dfe7e6"></label><br><br>
+            <label>Messaggio<br><textarea name="message" required rows="5" placeholder="Raccontami brevemente di cosa hai bisogno" style="width:100%;padding:12px;border-radius:10px;border:1px solid #dfe7e6"></textarea></label><br><br>
+            <button class="btn" type="submit">Invia richiesta</button>
+            <p class="tagline">Questo modulo è una demo lato client. Per ricevere davvero le richieste, integra Formspree o Netlify Forms.</p>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Studio</h3>
+          <p>Largo Salvo d'Acquisto 24, 37012 Bussolengo (VR)<br>
+          Tel <a href="tel:+393208775159">+39 320 877 5159</a><br>
+          Email <a href="mailto:sarachiodi.psy@gmail.com">sarachiodi.psy@gmail.com</a></p>
+          <div class="sep"></div>
+          <iframe title="Mappa dello studio" src="https://www.google.com/maps?q=Largo+Salvo+d'Acquisto+24%2C+Bussolengo&output=embed" style="border:0;width:100%;height:260px;border-radius:12px"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- POLICY -->
+    <section id="privacy" class="container policy">
+      <div class="card">
+        <h2>Privacy Policy</h2>
+        <p>Ai sensi del Regolamento UE 2016/679 (GDPR), i dati personali raccolti tramite modulo di contatto, email o telefono vengono utilizzati esclusivamente per rispondere alle richieste o per fissare appuntamenti. Non vengono ceduti a terzi. È possibile richiederne la modifica o cancellazione scrivendo a <a href="mailto:sarachiodi.psy@gmail.com">sarachiodi.psy@gmail.com</a>.</p>
+      </div>
+    </section>
+
+    <section id="cookie" class="container policy">
+      <div class="card">
+        <h2>Cookie Policy</h2>
+        <p>Questo sito utilizza cookie tecnici necessari al funzionamento e, previo consenso, cookie di analisi anonimi del traffico. L’utente può gestire le preferenze tramite le impostazioni del browser oppure dal banner dedicato.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="cols">
+        <div>
+          <div class="logo" style="color:#cfe9e6">
+            <div class="logo-badge" aria-hidden="true"></div>
+            <div>
+              Dr.ssa Sara Chiodi
+              <div class="tagline">Psicologa Psicoterapeuta</div>
+            </div>
+          </div>
+          <p style="margin-top:10px;color:#9cc1bc">© <span id="year"></span> Tutti i diritti riservati.</p>
+        </div>
+        <div>
+          <h4>Info</h4>
+          <ul class="clean">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#tariffe">Tariffe</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legale</h4>
+          <ul class="clean">
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#cookie">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner">
+    <div>
+      Questo sito utilizza cookie tecnici e, previo consenso, cookie di analisi. <a href="#cookie" style="color:#1AFFD5">Leggi l’informativa</a>
+    </div>
+    <button onclick="acceptCookies()">Accetta</button>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function handleSubmit(e){
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(e.target).entries());
+      console.log('Richiesta inviata (demo):', data);
+      alert('Grazie! Ti ricontatterò al più presto.');
+      e.target.reset();
+      return false;
+    }
+    function acceptCookies(){
+      document.getElementById('cookie-banner').style.display='none';
+      localStorage.setItem('cookieConsent','true');
+    }
+    if(localStorage.getItem('cookieConsent')==='true'){
+      document.getElementById('cookie-banner').style.display='none';
+    }
+  </script>
+</body>
+</html>
